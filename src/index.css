@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-brand: "Yuji Mai", serif;
+  --font-jp: "Zen Kurenaido", sans-serif;
+}
