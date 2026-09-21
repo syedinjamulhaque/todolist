@@ -1,23 +1,21 @@
-```md
 # 記録チックス — Kiroku Ticks 📝
 
-A minimal, Japanese-themed todo list application built with React and Tailwind CSS. The app combines everyday task management with a glassmorphism interface and a live animated WebGL shader background.
+A minimal, Japanese-themed to-do list application built with React and Tailwind CSS. Kiroku Ticks pairs everyday task management with a glassmorphism interface and a live, animated WebGL shader background.
 
 🔗 **Live Demo:** [todolist-five-virid-85.vercel.app](https://todolist-five-virid-85.vercel.app/)
 
+---
 ## ✨ Features
 
-- Add new tasks
-- Edit existing tasks
-- Delete tasks
+- Add, edit, and delete tasks
 - Mark tasks as completed with a smooth fade-out transition
-- Toggle between pending and completed tasks
-- Save tasks locally using browser `localStorage`
+- Toggle between pending and completed views
+- Persist tasks locally via browser `localStorage`
 - Generate unique task IDs with UUID
-- Animated WebGL shader background using `ogl`
+- Animated WebGL shader background powered by `ogl`
 - Japanese lantern-inspired glassmorphism UI
-- Responsive design for mobile, tablet, and desktop
-- Smooth hover and reveal animations
+- Fully responsive design for mobile, tablet, and desktop
+- Smooth hover and reveal animations throughout
 
 ## 🛠️ Tech Stack
 
@@ -26,37 +24,50 @@ A minimal, Japanese-themed todo list application built with React and Tailwind C
 | Framework | React, Vite |
 | Styling | Tailwind CSS |
 | Icons | React Icons |
-| Graphics | WebGL with ogl |
+| Graphics | WebGL (via `ogl`) |
 | Utilities | UUID |
-| Data Persistence | Browser localStorage |
+| Data Persistence | Browser `localStorage` |
 | Deployment | Vercel |
 
 ## 🚀 Getting Started
 
-### Clone the repository
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18 or later
+- npm (bundled with Node.js)
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/syedinjamulhaque/todolist.git
 cd todolist
 ```
 
-### Install dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run the development server
+### 3. Run the development server
 
 ```bash
 npm run dev
 ```
 
-Open the local address shown in your terminal, usually:
+Then open the local address printed in your terminal — typically:
 
 ```text
 http://localhost:5173
 ```
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+The optimized output is generated in the `dist/` directory, ready to deploy.
 
 ## 📂 Project Structure
 
@@ -73,11 +84,12 @@ src/
 
 ## 🎯 What This Project Demonstrates
 
-- Managing task creation, editing, deletion, completion, and filtering with React hooks
+- Managing task creation, editing, deletion, and completion state with React hooks
+- Filtering and toggling between pending and completed tasks
 - Persisting task data across browser sessions with `localStorage`
-- Integrating a custom WebGL/GLSL animated background into a React app
-- Building a cohesive Japanese-inspired visual design
-- Creating a responsive and polished user experience
+- Integrating a custom WebGL/GLSL animated background into a React application
+- Building a cohesive, Japanese-inspired visual design system
+- Delivering a responsive, polished user experience
 
 ## 📬 Connect
 
@@ -86,4 +98,3 @@ src/
 ---
 
 Made with ❤️ using React, Tailwind CSS, and WebGL.
-```
